@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.aplicativo-camera {
+    width: 375px; 
+    height: 812px;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    border: 8px solid #333; 
+    border-radius: 40px;
+}
+
+/* --- BARRA SUPERIOR --- */
+.barra-topo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 10px;
+    background: transparent; 
+    position: relative;
+    z-index: 1; 
+}
+
+.texto-zeiss {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* --- CAMADA CENTRAL & VÉU --- */
+.camada-sobreposta {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative; 
+}
+
+.camada-sobreposta::before {
+    content: "";
+    position: absolute;
+    top: -200px;
+    bottom: -155px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: grayscale(0.5);
+    -webkit-backdrop-filter: grayscale(0.5);
+    z-index: 5; 
+}
+
+.cartao-boas-vindas {
+    background: #2d2d2d; 
+    border: 1px solid #444;
+    border-radius: 25px;
+    width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0,0,0,1);
+    position: relative;
+    z-index: 11; 
+}
+
+.cartao-boas-vindas h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+.botao-principal {
+    background-color: #ffd600;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    color: #000;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.legenda-modos {
+    font-size: 14px;
+    color: #eee;
+    margin-bottom: 15px;
+}
+
+.item-modo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.item-modo {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 5px;
+    border-radius: 15px;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.item-modo:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.item-modo span {
+    color: white;
+    text-align: center;
+}
+
+.grade-modos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.item-modo {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 5px;
+    border-radius: 15px;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.icone-imagem {
+    width: 24px;   
+    height: 24px;
+    object-fit: contain;
+}
+
+.link-pular {
+    color: #aaa;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+/* --- RODAPÉ --- */
+.area-inferior {
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 1; 
+}
+
+.seletor-modos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.seletor-modos .ativo {
+    color: #fff;
+    font-weight: bold;
+}
+
+.seletor-modos span {
+    color: #999;
+}
+
+.linha-disparo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px 30px;
+}
+
+.previa-galeria {
+    width: 50px;
+    height: 50px;
+    background: #333;
+    border-radius: 8px;
+}
+
+.botao-disparador {
+    width: 80px;
+    height: 80px;
+    border: 4px solid #aaa;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo-interno {
+    width: 65px;
+    height: 65px;
+    border: 3px solid #ffd600;
+    border-radius: 50%;
+}
+
+.alternar-camera {
+    width: 50px;
+    height: 50px;
+    background: #333;
+    border-radius: 50%;
+    padding: 12px;
+    object-fit: contain;
+}
+
+/* --- NAVEGAÇÃO DO SISTEMA --- */
+.navegacao-sistema {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #000;
+    position: relative;
+    z-index: 20; 
+}

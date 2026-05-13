@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface de Câmera</title>
+    <link rel="stylesheet" href="../pageInicio/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="aplicativo-camera">
+        
+        <header class="barra-topo">
+            <img src="../src/img/camera.png" alt="Câmera" class="icone">
+            <img src="../src/img/trovao.png" alt="Flash" class="icone">
+            <img src="../src/img/sla.png" alt="Otimização" class="icone">
+            <div class="texto-zeiss">ZEISS</div>
+            <img src="../src/img/margarida-alternativa.png" alt="Macro" class="icone">
+            <img src="../src/img/definicoes.png" alt="Configurações" class="icone">
+        </header>
+
+        <main class="camada-sobreposta">
+            <div class="cartao-boas-vindas">
+                <h1>Bem-Vindo!</h1>
+                <p class="subtitulo">Sua câmera, suas regras.</p>
+
+                <a href="../src/pageConfigModo/index.html" style="text-decoration: none;">
+                    <button class="botao-principal">
+                        <img src="../src/img/engrenagens.png" alt="Modo Personalizado" class="icone-engrenagem"> 
+                        Criar seu primeiro modo
+                    </button>
+                </a>
+
+                <p class="legenda-modos">Modos mais utilizados</p>
+
+                <div class="grade-modos">
+                    <div class="item-modo">
+                        <a href="../src/pageModoRetratoAtt/index.html" style="text-decoration: none;">
+                            <img src="../src/img/do-utilizador.png" alt="Modo Retrato" class="icone-imagem">
+                            <span>Modo Retrato</span>
+                        </a>
+                    </div>
+                    <div class="item-modo">
+                        <a href="../src/pageModoEstudoAtt/index.html" style="text-decoration: none;">
+                            <img src="../src/img/marcador-de-livro.png" alt="Modo Estudo" class="icone-imagem"> 
+                            <span>Modo Estudo Inteligente</span>
+                        </a>
+                    </div>
+                    <div class="item-modo">
+                        <a href="../src/pageModoNoiteAtt/index.html" style="text-decoration: none;">
+                            <img src="../src/img/lua.png" alt="Modo Noite" class="icone-imagem">
+                            <span>Modo Noite</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="../src/pageFotoMateria/index.html" class="link-pular">Agora não, quero só tirar fotos rápidas</a>
+            </div>
+        </main>
+
+        <footer class="area-inferior">
+            <nav class="seletor-modos">
+                <span>Estudo</span>
+                <span>Noite</span>
+                <span>Foto</span>
+                <span>Vídeo</span>
+                <span>Retrato</span>
+                <span>Mais</span>
+            </nav>
+
+            <div class="linha-disparo">
+                <div class="previa-galeria"></div>
+                <div class="botao-disparador">
+                    <div class="circulo-interno"></div>
+                </div>
+                <img src="../src/img/atualizar.png" alt="Inverter Câmera" class="alternar-camera">
+            </div>
+
+            <div class="navegacao-sistema">
+                <img src="../src/img/menu-hamburguer.png" alt="Abas" class="icone-nav">
+                <img src="../src/img/circulo.png" alt="Início" class="icone-nav">
+                <img src="../src/img/angulo-esquerdo.png" alt="Home" class="icone-nav">
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

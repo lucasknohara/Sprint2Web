@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* --- ESTRUTURA PADRÃO (BASE) --- */
+.aplicativo-camera {
+  width: 375px; 
+  height: 812px; /* Altura padrão da base */
+  background-color: #000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 8px solid #333; 
+  border-radius: 40px;
+}
+
+/* --- HEADER ALINHADO --- */
+.barra-topo-editar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 24px 20px; /* Padding superior de 50px como na base */
+  background: #000;
+}
+
+.barra-topo-editar h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.btn-topo {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* --- CONTEÚDO --- */
+.conteudo-principal {
+  flex-grow: 1;
+  padding: 10px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.secao-titulo {
+  color: #AAAAAA;
+  font-size: 13px;
+  padding-left: 5px;
+}
+
+.cartao {
+  background: #1c1c1c;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartao-vazio {
+  height: 120px;
+}
+
+.texto-vazio {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.cartao-modos {
+  height: 220px;
+}
+
+/* --- BOTÃO PADRÃO --- */
+.botao-amarelo {
+  background-color: #ffd600;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icone-btn {
+  width: 20px;
+  height: 20px;
+}
+
+/* --- NAVEGAÇÃO DO SISTEMA (IGUAL À BASE) --- */
+.navegacao-sistema {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #000;
+    position: relative;
+    z-index: 20; 
+}
+
+#listaModos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+  justify-items: center;
+  align-items: start;
+}
+
+.item-modo-personalizado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 80px;
+}
+
+.icone-modo-personalizado {
+  width: 55px;
+  height: 55px;
+  background: #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icone-imagem {
+  width: 24px;
+  height: 24px;
+}
+
+.nome-modo-personalizado {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+
+/* BOTÃO + */
+.item-adicionar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.icone-adicionar {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #ffd600;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.texto-adicionar {
+    font-size: 11px;
+    color: white;
+    margin-top: 6px;
+}
+
+/* MODOS CRIADOS */
+.item-modo-personalizado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.icone-modo-personalizado {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-modo-personalizado img {
+    width: 24px;
+    height: 24px;
+}
+
+.nome-modo-personalizado {
+    font-size: 11px;
+    color: white;
+}
+
+.item-adicionar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+}
+
+.item-modo-personalizado,
+.item-adicionar {
+  width: 80px;
+}

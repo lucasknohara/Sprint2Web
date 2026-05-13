@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configurar Novo Modo - Câmera</title>
+  <link rel="stylesheet" href="../pageConfigModo/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="aplicativo-camera">
+
+  <header class="barra-topo-config">
+    <a href="../pageMeusModos/index.html" style="text-decoration: none;">
+      <img class="btn-fechar" alt="Botão sair" src="../img/x Branco.png">
+    </a>
+    <h2>Configurar Novo Modo</h2>
+    <button class="btn-salvar">Salvar</button>
+  </header>
+
+  <main class="conteudo-scroll">
+    
+    <div class="cartao">
+      <label class="campo-label">Nome do modo</label>
+      <input class="campo-input" id="campoNome" type="text" placeholder="Escreva o Nome Aqui...">
+    </div>
+
+    <div class="cartao">
+      <p class="campo-label">Icons</p>
+      <div class="icones-wrapper">
+        <img src="../img/seta-para-a-esquerda.png" alt="Seta para a Esquerda" class="seta-nav">
+        <div class="icones-lista">
+          
+          <label class="icone-opcao">
+            <input type="radio" name="selecao-icone" class="icone-input" value="../img/modo-paisagem.png">
+            <div class="icone-circulo">
+               <img src="../img/modo-paisagem.png" alt="Icon">
+            </div>
+          </label>
+
+          <label class="icone-opcao">
+            <input type="radio" name="selecao-icone" class="icone-input" value="../img/trovao.png">
+            <div class="icone-circulo">
+               <img src="../img/trovao.png" alt="Icon">
+            </div>
+          </label>
+
+          <label class="icone-opcao">
+            <input type="radio" name="selecao-icone" class="icone-input" value="../img/procurar.png">
+            <div class="icone-circulo">
+               <img src="../img/procurar.png" alt="Icon">
+            </div>
+          </label>
+
+          <label class="icone-opcao">
+            <input type="radio" name="selecao-icone" class="icone-input" value="../img/marcador-de-livro.png">
+            <div class="icone-circulo">
+               <img src="../img/marcador-de-livro.png" alt="Icon">
+            </div>
+          </label>
+
+        </div>
+        <img src="../img/seta-para-a-direita.png" alt="Seta para a Direita" class="seta-nav">
+      </div>
+    </div>
+
+    <div class="cartao">
+      <p class="secao-titulo">Ajustes Visuais</p>
+      <div class="slider-grupo">
+        <label class="slider-label">Zoom</label>
+        <input type="range" class="slider" min="0" max="100" value="30">
+        <div class="slider-marcas">
+          <span>0.5x</span><span>2x</span><span>10x</span>
+        </div>
+      </div>
+
+      <div class="filtros-grade">
+        <label class="filtro-opcao">
+          <input type="radio" name="filtro-visual" class="filtro-input">
+          <div class="filtro-item">Natural</div>
+        </label>
+
+        <label class="filtro-opcao">
+          <input type="radio" name="filtro-visual" class="filtro-input">
+          <div class="filtro-item">Alto Contraste</div>
+        </label>
+
+        <label class="filtro-opcao">
+          <input type="radio" name="filtro-visual" class="filtro-input">
+          <div class="filtro-item">Suave</div>
+        </label>
+      </div>
+
+      <div class="slider-duplo">
+        <div class="slider-grupo-inline">
+          <label class="slider-label">Brilho</label>
+          <input type="range" class="slider">
+        </div>
+        <div class="slider-grupo-inline">
+          <label class="slider-label">Contraste</label>
+          <input type="range" class="slider">
+        </div>
+      </div>
+    </div>
+
+    <div class="cartao">
+      <p class="secao-titulo">Funções Especializadas</p>
+      
+      <div class="funcao-item">
+        <span class="funcao-texto">Ativar IA</span>
+        <label class="toggle"><input type="checkbox"><span class="toggle-slider"></span></label>
+      </div>
+
+      <div class="funcao-item">
+        <span class="funcao-texto">Gerar PDF</span>
+        <label class="toggle"><input type="checkbox"><span class="toggle-slider"></span></label>
+      </div>
+
+      <div class="funcao-item">
+        <span class="funcao-texto">Resumir com IA</span>
+        <label class="toggle"><input type="checkbox"><span class="toggle-slider"></span></label>
+      </div>
+
+      <div class="funcao-item">
+        <span class="funcao-texto">Organizar em pastas</span>
+        <label class="toggle"><input type="checkbox"><span class="toggle-slider"></span></label>
+      </div>
+    </div>
+
+    <div class="container-btn-criar">
+        <button class="btn-criar" id="btnCriar">Criar Modo</button>
+    </div>
+
+  </main>
+
+  <footer class="navegacao-sistema">
+    <img src="../img/menu-hamburguer.png" alt="Menu" class="icone-nav">
+    <img src="../img/circulo.png" alt="Home" class="icone-nav">
+    <img src="../img/angulo-esquerdo.png" alt="Home" class="icone-nav">
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

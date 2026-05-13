@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+/* --- ESTRUTURA DO CELULAR --- */
+.aplicativo-camera {
+    width: 375px; 
+    height: 812px;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Mantém a tela estática */
+    border: 8px solid #333; 
+    border-radius: 40px;
+}
+
+/* --- CABEÇALHO --- */
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 24px 10px; 
+}
+
+.barra-superior h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.botao-editar {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* --- CONTEÚDO PRINCIPAL --- */
+.area-principal {
+    flex-grow: 1;
+    background: #1a1a1a;
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente para evitar espaços vazios */
+}
+
+.grade-modos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px 5px; /* Ajuste para caber tudo sem rolagem */
+    width: 100%;
+}
+
+.item-modo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+}
+
+.icone-modo {
+    width: 52px; /* Tamanho otimizado para telas pequenas */
+    height: 52px;
+    background: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-modo svg {
+    width: 24px;
+    height: 24px;
+    stroke: #fff;
+    stroke-width: 1.5;
+    fill: none;
+}
+
+.nome-modo {
+    font-size: 10px;
+    color: #eee;
+    text-align: center;
+    max-width: 75px;
+    line-height: 1.2;
+}
+
+/* --- SAIBA MAIS --- */
+.saiba-mais {
+    position: absolute;
+    right: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- RODAPÉ AJUSTADO PARA ALINHAMENTO --- */
+.rodape {
+    background: #000;
+    height: 221px; /* Altura fixa para garantir que o menu não saia do lugar */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.abas-inferiores {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 15px; /* Ajustado para alinhar com a primeira tela */
+    font-size: 14px;
+}
+
+.aba {
+    color: #ffffff; 
+    position: relative;
+    z-index: 1; 
+}
+
+.aba.ativa {
+    color: #ffd600; 
+    font-weight: bold;
+}
+
+/* --- NAVEGAÇÃO DO SISTEMA --- */
+.navegacao-sistema {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px; /* Mais espaço embaixo para alinhar os ícones de navegação */
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #000;
+}
