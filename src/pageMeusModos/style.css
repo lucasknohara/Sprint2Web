@@ -116,13 +116,13 @@ position: relative;
 z-index: 20; 
 }
 
-/* O container azul (badge) */
 .badge-mais {
     position: absolute;
     top: -2px;
     right: -2px;
     width: 20px;
     height: 20px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,15 +130,13 @@ z-index: 20;
     overflow: hidden; 
 }
 
-/* A imagem dentro do badge */
 .img-badge {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Faz a imagem caber certinho no espaço */
+    object-fit: contain;
     display: block;
 }
 
-/* Estilo para os itens de modo na grade */
 .item-modo-criado {
     display: flex;
     flex-direction: column;
@@ -162,7 +160,7 @@ z-index: 20;
     width: 25px;
 }
 
-/* O círculo cinza para "Novo Modo" */
+
 .circulo-novo-modo {
     width: 50px;
     height: 50px;
