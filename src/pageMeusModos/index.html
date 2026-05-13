@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Editar Modos - Câmera</title>
-  <link rel="stylesheet" href="../pageMeusModos/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editar Modos - Câmera</title>
+<link rel="stylesheet" href="../pageMeusModos/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div class="aplicativo-camera">
 
-  <header class="barra-topo-editar">
-    <a href="../pageMais/index.html" style="text-decoration: none;">
-      <img alt="Saida" src="../img/x Branco.png" class="btn-topo">
-    </a>
-    <h2>Meus modos</h2>
-    <a href="../pageMais/index.html" style="text-decoration: none;">
-      <img alt="certo" src="../img/verificar.png" class="btn-topo">
-    </a>
-  </header>
+<header class="barra-topo-editar">
+<a href="../pageMais/index.html" style="text-decoration: none;">
+<img alt="Saida" src="../img/x Branco.png" class="btn-topo">
+</a>
+<h2>Meus modos</h2>
+<a href="../pageMais/index.html" style="text-decoration: none;">
+<img alt="certo" src="../img/verificar.png" class="btn-topo">
+</a>
+</header>
 
-  <main class="conteudo-principal">
+<main class="conteudo-principal">
 
-    <p class="secao-titulo">Modos de Tela escolhidos</p>
+<p class="secao-titulo">Modos de Tela escolhidos</p>
 
-    <div class="cartao cartao-vazio">
-      <span class="texto-vazio">Nenhum modo escolhido</span>
-    </div>
-
-    <p class="secao-titulo">Mais modos</p>
-
-<div class="cartao cartao-modos">
-    <div id="listaModos" class="grade-modos-personalizados"></div>
-    <a href="../pageConfigModo/index.html" class="item-adicionar">
-        <div class="icone-adicionar">+</div>
-        <span class="texto-adicionar">Criar modo</span>
-    </a>
+<div class="cartao cartao-vazio">
+<span class="texto-vazio">Nenhum modo escolhido</span>
 </div>
 
-  </main>
+<p class="secao-titulo">Mais modos</p>
 
-  <footer class="navegacao-sistema">
-    <img src="../img/menu-hamburguer.png" alt="Abas" class="icone-nav">
-    <img src="../img/circulo.png" alt="Início" class="icone-nav">
-    <img src="../img/angulo-esquerdo.png" alt="Home" class="icone-nav">
-  </footer>
+    <div class="cartao cartao-modos">
+    <div class="cartao cartao-modos" id="area-mais-modos">
+<a href="../pageConfigModo/index.html" style="text-decoration: none;">
+<button class="botao-amarelo">
+<img src="../img/engrenagens.png" alt="Modo Personalizado" class="icone-btn"> 
+Criar seu primeiro modo
+</button>
+</a>
+</div>
+
+</main>
+
+<footer class="navegacao-sistema">
+<img src="../img/menu-hamburguer.png" alt="Abas" class="icone-nav">
+<img src="../img/circulo.png" alt="Início" class="icone-nav">
+<img src="../img/angulo-esquerdo.png" alt="Home" class="icone-nav">
+</footer>
 
 </div>
 <script src="script.js"></script>
