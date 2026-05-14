@@ -11,7 +11,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    position: relative;
+}
+
+body::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,0.6);
 }
 
 .container-login {
@@ -29,6 +42,12 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
+.caixa-login {
+    position: relative;
+    z-index: 1;
+
+    backdrop-filter: blur(10px);
+}
 .caixa-login h1 {
     text-align: center;
     margin-bottom: 30px;
@@ -68,14 +87,15 @@ button {
     background: #facc15;
     color: black;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
-    background: #1a1a1a;
-    color: black;
+    
 }
 
 button:hover {
     background: #eab308;
+    transform: scale(1.02);
 }
 
 #mensagem {
