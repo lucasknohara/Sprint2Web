@@ -15,6 +15,28 @@ formularioRegistro.addEventListener("submit", (event) => {
     mensagem.textContent = "Conta criada com sucesso!";
 
     setTimeout(() => {
-        window.location.href = "../src/pageInicio";
+         window.location.href = "../src/pageInicio/index.html";
     }, 1000);
 });
+const imagens = [
+    "../src/img/JOVI1.jpg",
+    "../src/img/JOVI2.jpg",
+    "../src/img/JOVI3.jpg"
+];
+
+let indiceAtual = 0;
+
+function trocarFundo() {
+
+    document.body.style.backgroundImage = `url('${imagens[indiceAtual]}')`;
+
+    indiceAtual++;
+
+    if (indiceAtual >= imagens.length) {
+        indiceAtual = 0;
+    };
+};
+
+trocarFundo();
+
+setInterval(trocarFundo, 3000);
